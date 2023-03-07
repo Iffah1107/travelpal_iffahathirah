@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>China Cuisine</title>
+    <script src="https://kit.fontawesome.com/1e5162e96b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="food.css" type="text/css" />
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+
+<body>
+    <!-- hero image -->
+    <div class="hero-image">
+        <div class="typewriter">
+            <center>
+                <!-- navigation bar-->
+
+                <div class="navbar">
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="explore.html"><i class="fa-solid fa-location-dot"></i> Explore</a>
+                    <a href="food.html"><i class="fa-solid fa-utensils"></i> Cuisine</a>
+                </div>
+            </center>
+            <br><br>
+            <div class="hero-text">
+                <h1 style="font-size:50px">Explore the Amazing food in China</h1>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <!--food images-->
+    <h2 style="text-align:center">Chinese Cuisine Gallery</h2>
+    <div class="body2">
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/cantonese-aka-guangdong-cuisine-1669836324.webp"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/sichuan-cuisine-1669836324.webp"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/hunan-cuisine-1669836324.webp"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/fujian-aka-min-cuisine-1669836324.webp"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/jiangsu-aka-su-cuisine-1669836324.webp"
+                    style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/shaanxi-aka-xian-cuisine-1669836324.webp"
+                    style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor"
+                        src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/cantonese-aka-guangdong-cuisine-1669836324.webp"
+                        style="width:100%" onclick="currentSlide(1)" alt="Cantonese (aka Guangdong) cuisine">
+                </div>
+                <div class="column">
+                    <img class="demo cursor"
+                        src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/sichuan-cuisine-1669836324.webp"
+                        style="width:100%" onclick="currentSlide(2)" alt="Sichuan cuisine">
+                </div>
+                <div class="column">
+                    <img class="demo cursor"
+                        src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/hunan-cuisine-1669836324.webp"
+                        style="width:100%" onclick="currentSlide(3)" alt="Hunan cuisine">
+                </div>
+                <div class="column">
+                    <img class="demo cursor"
+                        src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/fujian-aka-min-cuisine-1669836324.webp"
+                        style="width:100%" onclick="currentSlide(4)" alt="Fujian (aka Min) cuisine">
+                </div>
+                <div class="column">
+                    <img class="demo cursor"
+                        src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/jiangsu-aka-su-cuisine-1669836324.webp"
+                        style="width:100%" onclick="currentSlide(5)" alt="Jiangsu (aka Su) cuisine">
+                </div>
+                <div class="column">
+                    <img class="demo cursor"
+                        src="https://www.tastingtable.com/img/gallery/regional-chinese-food-explained/shaanxi-aka-xian-cuisine-1669836324.webp"
+                        style="width:100%" onclick="currentSlide(6)" alt="Shaanxi (aka Xi'an) cuisine">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+    <!--food search-->
+    <center>
+
+
+        <label for="meal-name">Choose meal that you want : </label>
+
+        <select class="button2" style="color: black;" name="name" style="height: 35px; width: 200px;" id="meal-name"
+            style="font-weight: bolder;">
+            <option>Choose Food</option>
+            <option>Beef Lo Mein</option>
+            <option>Chicken Congee</option>
+            <option>Egg Drop Soup</option>
+            <option>General Tso's Chicken</option>
+            <option>Hot and Sour Soup</option>
+            <option>Kung Pao Chicken</option>
+            <option>Kung Po Prawns</option>
+            <option>Ma Po Tofu</option>
+            <option>Shrimp Chow Fun</option>
+            <option>Wontons</option>
+        </select>
+        </div>
+
+        <button class="button2" onclick="searchMeal()">Search</button>
+
+        <div id="meal-info"></div>
+    </center>
+<br><br><br><br><br><br><br><br><br>
+<hr/>
+    <center>
+        <h3 style="font-weight: bold">Exotic Food in China</h3>
+        <div class="row1">
+            <div class="column1">
+                <h4>Chicken Testicles</h4>
+                <img  src="https://listverse.com/wp-content/uploads/2020/03/shutterstock_1147141388.jpg" 
+                    style="width:100% ">
+            </div>
+            <div class="column1">
+                <h4>Century Eggs</h4>
+                <img src="https://www.adequatetravel.com/blog/wp-content/uploads/2020/09/Thousand-Year-Old-Eggs-or-Century-Eggs.jpg"
+                    style="width:100%">
+            </div>
+            <div class="column1">
+                <h4>Scorpions</h4>
+                <img src="https://www.adequatetravel.com/blog/wp-content/uploads/2020/09/Scorpions.jpg"
+                    style="width:100%">
+            </div>
+        </div>
+    </center>
+    
+  <br><br>
+  <div class="footer">
+    <p><span class="logo-text">LET'S TRAVEL TO CHINA</span></p>
+    <p>Beyond Your Imagination Travel in China</p>
+    <hr />
+    <p>
+      <i class="fa-regular fa-copyright"></i><span class="tab1"></span> Exploring China with Us<br><br>
+      <i class="fa-brands fa-facebook" style="padding: 3px;"></i>
+      <i class="fa-brands fa-twitter" style="padding: 3px;"></i>
+      <i class="fa-solid fa-share-nodes" style="padding: 3px;"></i>
+    </p>
+  </div>
+
+    <script src="food.js"></script>
+
+</body>
+
+</html>
